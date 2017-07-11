@@ -1,0 +1,6 @@
+C:\Users\hsoni\Desktop\Tavisca.Training2017.HandsOn.Util\Tavisca.Training2017.HandsOn.Util\bin\Debug\Tavisca.Training2017.HandsOn.Util.exe.config
+C:\Users\hsoni\Desktop\Tavisca.Training2017.HandsOn.Util\Tavisca.Training2017.HandsOn.Util\bin\Debug\Tavisca.Training2017.HandsOn.Util.exe
+C:\Users\hsoni\Desktop\Tavisca.Training2017.HandsOn.Util\Tavisca.Training2017.HandsOn.Util\bin\Debug\Tavisca.Training2017.HandsOn.Util.pdb
+C:\Users\hsoni\Desktop\Tavisca.Training2017.HandsOn.Util\Tavisca.Training2017.HandsOn.Util\obj\Debug\Tavisca.Training2017.HandsOn.Util.csprojResolveAssemblyReference.cache
+C:\Users\hsoni\Desktop\Tavisca.Training2017.HandsOn.Util\Tavisca.Training2017.HandsOn.Util\obj\Debug\Tavisca.Training2017.HandsOn.Util.exe
+C:\Users\hsoni\Desktop\Tavisca.Training2017.HandsOn.Util\Tavisca.Training2017.HandsOn.Util\obj\Debug\Tavisca.Training2017.HandsOn.Util.pdb

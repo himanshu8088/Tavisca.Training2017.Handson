@@ -1,0 +1,6 @@
+C:\Users\hsoni\Desktop\Tavisca.Training2017.HandsOn.SortByStack\Tavisca.Training2017.HandsOn.SortByStack\bin\Debug\Tavisca.Training2017.HandsOn.SortByStack.exe.config
+C:\Users\hsoni\Desktop\Tavisca.Training2017.HandsOn.SortByStack\Tavisca.Training2017.HandsOn.SortByStack\bin\Debug\Tavisca.Training2017.HandsOn.SortByStack.exe
+C:\Users\hsoni\Desktop\Tavisca.Training2017.HandsOn.SortByStack\Tavisca.Training2017.HandsOn.SortByStack\bin\Debug\Tavisca.Training2017.HandsOn.SortByStack.pdb
+C:\Users\hsoni\Desktop\Tavisca.Training2017.HandsOn.SortByStack\Tavisca.Training2017.HandsOn.SortByStack\obj\Debug\Tavisca.Training2017.HandsOn.SortByStack.csprojResolveAssemblyReference.cache
+C:\Users\hsoni\Desktop\Tavisca.Training2017.HandsOn.SortByStack\Tavisca.Training2017.HandsOn.SortByStack\obj\Debug\Tavisca.Training2017.HandsOn.SortByStack.exe
+C:\Users\hsoni\Desktop\Tavisca.Training2017.HandsOn.SortByStack\Tavisca.Training2017.HandsOn.SortByStack\obj\Debug\Tavisca.Training2017.HandsOn.SortByStack.pdb

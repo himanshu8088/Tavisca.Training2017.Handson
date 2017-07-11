@@ -1,0 +1,6 @@
+C:\Users\hsoni\Desktop\Tavisca.Training2017.HandsOn.ClockProblem\Tavisca.Training2017.HandsOn.ClockProblem\bin\Debug\Tavisca.Training2017.HandsOn.ClockProblem.exe.config
+C:\Users\hsoni\Desktop\Tavisca.Training2017.HandsOn.ClockProblem\Tavisca.Training2017.HandsOn.ClockProblem\bin\Debug\Tavisca.Training2017.HandsOn.ClockProblem.exe
+C:\Users\hsoni\Desktop\Tavisca.Training2017.HandsOn.ClockProblem\Tavisca.Training2017.HandsOn.ClockProblem\bin\Debug\Tavisca.Training2017.HandsOn.ClockProblem.pdb
+C:\Users\hsoni\Desktop\Tavisca.Training2017.HandsOn.ClockProblem\Tavisca.Training2017.HandsOn.ClockProblem\obj\Debug\Tavisca.Training2017.HandsOn.ClockProblem.csprojResolveAssemblyReference.cache
+C:\Users\hsoni\Desktop\Tavisca.Training2017.HandsOn.ClockProblem\Tavisca.Training2017.HandsOn.ClockProblem\obj\Debug\Tavisca.Training2017.HandsOn.ClockProblem.exe
+C:\Users\hsoni\Desktop\Tavisca.Training2017.HandsOn.ClockProblem\Tavisca.Training2017.HandsOn.ClockProblem\obj\Debug\Tavisca.Training2017.HandsOn.ClockProblem.pdb

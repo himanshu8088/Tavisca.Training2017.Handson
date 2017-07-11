@@ -1,0 +1,6 @@
+C:\Users\hsoni\Desktop\Tavisca.Training2017.HandsOn.SearchSubStr\Tavisca.Training2017.HandsOn.SearchSubStr\bin\Debug\Tavisca.Training2017.HandsOn.SearchSubStr.exe.config
+C:\Users\hsoni\Desktop\Tavisca.Training2017.HandsOn.SearchSubStr\Tavisca.Training2017.HandsOn.SearchSubStr\bin\Debug\Tavisca.Training2017.HandsOn.SearchSubStr.exe
+C:\Users\hsoni\Desktop\Tavisca.Training2017.HandsOn.SearchSubStr\Tavisca.Training2017.HandsOn.SearchSubStr\bin\Debug\Tavisca.Training2017.HandsOn.SearchSubStr.pdb
+C:\Users\hsoni\Desktop\Tavisca.Training2017.HandsOn.SearchSubStr\Tavisca.Training2017.HandsOn.SearchSubStr\obj\Debug\Tavisca.Training2017.HandsOn.SearchSubStr.csprojResolveAssemblyReference.cache
+C:\Users\hsoni\Desktop\Tavisca.Training2017.HandsOn.SearchSubStr\Tavisca.Training2017.HandsOn.SearchSubStr\obj\Debug\Tavisca.Training2017.HandsOn.SearchSubStr.exe
+C:\Users\hsoni\Desktop\Tavisca.Training2017.HandsOn.SearchSubStr\Tavisca.Training2017.HandsOn.SearchSubStr\obj\Debug\Tavisca.Training2017.HandsOn.SearchSubStr.pdb
