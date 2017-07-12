@@ -1,0 +1,12 @@
+C:\Users\hsoni\Desktop\Tavisca.Training2017.HandsOn.FactorialProblem\Tavisca.Training2017.HandsOn.FactorialProblem\bin\Debug\Tavisca.Training2017.HandsOn.FactorialProblem.exe.config
+C:\Users\hsoni\Desktop\Tavisca.Training2017.HandsOn.FactorialProblem\Tavisca.Training2017.HandsOn.FactorialProblem\bin\Debug\Tavisca.Training2017.HandsOn.FactorialProblem.exe
+C:\Users\hsoni\Desktop\Tavisca.Training2017.HandsOn.FactorialProblem\Tavisca.Training2017.HandsOn.FactorialProblem\bin\Debug\Tavisca.Training2017.HandsOn.FactorialProblem.pdb
+C:\Users\hsoni\Desktop\Tavisca.Training2017.HandsOn.FactorialProblem\Tavisca.Training2017.HandsOn.FactorialProblem\obj\Debug\Tavisca.Training2017.HandsOn.FactorialProblem.csprojResolveAssemblyReference.cache
+C:\Users\hsoni\Desktop\Tavisca.Training2017.HandsOn.FactorialProblem\Tavisca.Training2017.HandsOn.FactorialProblem\obj\Debug\Tavisca.Training2017.HandsOn.FactorialProblem.exe
+C:\Users\hsoni\Desktop\Tavisca.Training2017.HandsOn.FactorialProblem\Tavisca.Training2017.HandsOn.FactorialProblem\obj\Debug\Tavisca.Training2017.HandsOn.FactorialProblem.pdb
+D:\Visual Studio Project\Soni\Tavisca.Training2017.HandsOn.FactorialProblem\Tavisca.Training2017.HandsOn.FactorialProblem\bin\Debug\Tavisca.Training2017.HandsOn.FactorialProblem.exe.config
+D:\Visual Studio Project\Soni\Tavisca.Training2017.HandsOn.FactorialProblem\Tavisca.Training2017.HandsOn.FactorialProblem\bin\Debug\Tavisca.Training2017.HandsOn.FactorialProblem.exe
+D:\Visual Studio Project\Soni\Tavisca.Training2017.HandsOn.FactorialProblem\Tavisca.Training2017.HandsOn.FactorialProblem\bin\Debug\Tavisca.Training2017.HandsOn.FactorialProblem.pdb
+D:\Visual Studio Project\Soni\Tavisca.Training2017.HandsOn.FactorialProblem\Tavisca.Training2017.HandsOn.FactorialProblem\obj\Debug\Tavisca.Training2017.HandsOn.FactorialProblem.csprojResolveAssemblyReference.cache
+D:\Visual Studio Project\Soni\Tavisca.Training2017.HandsOn.FactorialProblem\Tavisca.Training2017.HandsOn.FactorialProblem\obj\Debug\Tavisca.Training2017.HandsOn.FactorialProblem.exe
+D:\Visual Studio Project\Soni\Tavisca.Training2017.HandsOn.FactorialProblem\Tavisca.Training2017.HandsOn.FactorialProblem\obj\Debug\Tavisca.Training2017.HandsOn.FactorialProblem.pdb
