@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace Problem1
 {
-
     /*
                                                        Problem Statement 1.
    Write a program to display user’s complete mailing address. Accept user’s name, city, street, pin and house no. and store it in a variable and display it.
