@@ -24,21 +24,19 @@ namespace Problem1
 
         private void InputInformation()
         {            
-            mailingAddress.Name = InputType<String>("Enter User Name:");
-            mailingAddress.City = InputType<String>("Enter City:");
-            mailingAddress.Street = InputType<String>("Enter Street:");
-            mailingAddress.Pin = InputType<String>("Pin:");
-            mailingAddress.HouseNo = InputType<String>("House No.:");
+            mailingAddress.Name = GetConsoleInput("Enter User Name:");
+            mailingAddress.City = GetConsoleInput("Enter City:");
+            mailingAddress.Street = GetConsoleInput("Enter Street:");
+            mailingAddress.PinCode = GetConsoleInput("Pin:");
+            mailingAddress.HouseNumber = GetConsoleInput("House Number:");
         }
-
         private void DisplayMailingAddress()
         {
-            InputType<String>(mailingAddress.ToString());
+            GetConsoleInput(mailingAddress.ToString());
         }
-
-        private string InputType<T>(T type)
+        private string GetConsoleInput(string info)
         {
-            Console.WriteLine("\n"+type);
+            Console.WriteLine("\n"+info);
             return Console.ReadLine();
         }    
     }

@@ -15,12 +15,12 @@ namespace Problem1
         public String Name { get; set; }
         public String City { get; set; }
         public String Street { get; set; }
-        public String Pin { get; set; }
-        public String HouseNo { get; set; }
+        public String PinCode { get; set; }
+        public String HouseNumber { get; set; }
 
         public override string ToString()
         {
-            return "Mailing Address:\n"+Name+",\n"+HouseNo+",\n"+Street+ ",\n"+City+ ",\n" + Pin;
+            return string.Format("Mailing Address:\n{0}\n{1}\n{2}\n{3}\n{4}",Name,HouseNumber,Street,City,PinCode);         
         }        
     }    
 
