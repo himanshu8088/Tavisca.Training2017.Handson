@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{283BA61F-AB54-41F0-88E7-3A12CB7EB498}</ProjectGuid>
+    <ProjectGuid>{E6755BDE-05C0-4E79-BDAE-0FF45E64BCB1}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Tavisca.Training2017.HandsOn.Assignment3</RootNamespace>
-    <AssemblyName>Tavisca.Training2017.HandsOn.Assignment3</AssemblyName>
+    <RootNamespace>ConsoleApp</RootNamespace>
+    <AssemblyName>ConsoleApp</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -44,11 +44,15 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Solution1.cs" />
-    <Compile Include="Address.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Problem1\Problem1.csproj">
+      <Project>{2a8f8c77-d5d4-473b-8d7c-de07254a3638}</Project>
+      <Name>Problem1</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

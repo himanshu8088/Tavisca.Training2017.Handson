@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tavisca.Training2017.HandsOn.Assignment3
+namespace Problem1
 {
     /*
                                                         Problem Statement 1.
     Write a program to display user’s complete mailing address. Accept user’s name, city, street, pin and house no. and store it in a variable and display it.
     */
-    class Address
+    public class Address
     {
         public String Name { get; set; }
         public String City { get; set; }

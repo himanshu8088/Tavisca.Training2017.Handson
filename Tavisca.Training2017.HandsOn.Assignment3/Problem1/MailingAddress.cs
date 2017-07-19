@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tavisca.Training2017.HandsOn.Assignment3
+namespace Problem1
 {
 
     /*
@@ -12,15 +12,17 @@ namespace Tavisca.Training2017.HandsOn.Assignment3
    Write a program to display user’s complete mailing address. Accept user’s name, city, street, pin and house no. and store it in a variable and display it.
    */
 
-    class Solution1
+    public class MailingAddress
     {
-        Address mailingAddress;
-        public Solution1()
+        private Address mailingAddress;
+        public MailingAddress()
         {
             mailingAddress = new Address();
+            InputInformation();
+            DisplayMailingAddress();
         }
 
-        public void InputInformation()
+        private void InputInformation()
         {            
             mailingAddress.Name = InputType<String>("Enter User Name:");
             mailingAddress.City = InputType<String>("Enter City:");
@@ -29,7 +31,7 @@ namespace Tavisca.Training2017.HandsOn.Assignment3
             mailingAddress.HouseNo = InputType<String>("House No.:");
         }
 
-        public void DisplayMailingAddress()
+        private void DisplayMailingAddress()
         {
             InputType<String>(mailingAddress.ToString());
         }
@@ -38,9 +40,6 @@ namespace Tavisca.Training2017.HandsOn.Assignment3
         {
             Console.WriteLine("\n"+type);
             return Console.ReadLine();
-
-        }
-
-
+        }    
     }
 }
