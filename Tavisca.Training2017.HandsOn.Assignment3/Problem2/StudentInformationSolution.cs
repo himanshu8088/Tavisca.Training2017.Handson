@@ -5,8 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Problem2
-{
-    public enum InfoType { Name,Age,Class,University,RollNumber};
+{    
     public class StudentInformationSolution
     {
         StudentRecord info;
