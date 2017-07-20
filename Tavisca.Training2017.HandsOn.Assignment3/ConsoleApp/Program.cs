@@ -9,6 +9,7 @@ using Problem3;
 using Problem4;
 using Problem5;
 using Problem6;
+using Problem7;
 namespace ConsoleApp
 {
     class Program
@@ -37,6 +38,9 @@ namespace ConsoleApp
                     break;
                 case 6:
                     MathSolution math = new MathSolution();
+                    break;
+                case 7:
+                    Ladder ladder = new Ladder(5);
                     break;
                 default:
                     break;
