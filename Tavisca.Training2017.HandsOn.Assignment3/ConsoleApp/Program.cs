@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Problem1;
 using Problem2;
+using Problem3;
 namespace ConsoleApp
 {
     class Program
@@ -20,7 +21,10 @@ namespace ConsoleApp
                     MailingAddress mailingAddress = new MailingAddress();
                     break;
                 case 2:
-                    Student student = new Student();
+                    StudentInformation student = new StudentInformation();
+                    break;
+                case 3:
+                    EvenOddNumber numCheck = new EvenOddNumber();
                     break;
                 default:
                     break;

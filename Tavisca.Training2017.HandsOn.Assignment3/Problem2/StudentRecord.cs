@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 */
 namespace Problem2
 {
-    public class StudentInfromation : IInformation
+    public class StudentRecord : IRecord
     {
         private string name;
         private int age;

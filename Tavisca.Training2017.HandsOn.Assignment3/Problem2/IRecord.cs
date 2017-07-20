@@ -3,7 +3,7 @@
 */
 namespace Problem2
 {
-    public interface IInformation
+    public interface IRecord
     {
         string GetName();
         void SetName(string name);

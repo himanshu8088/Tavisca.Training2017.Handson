@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 namespace Problem2
 {
     public enum InfoType { Name,Age,Class,University,RollNumber};
-    public class Student
+    public class StudentInformation
     {
-        StudentInfromation info;
-        public Student()
+        StudentRecord info;
+        public StudentInformation()
         {
-            info = new StudentInfromation();
+            info = new StudentRecord();
             SetStudentInformation();
             DisplayStudentInfo();
         }
