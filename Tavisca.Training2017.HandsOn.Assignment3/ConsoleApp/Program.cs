@@ -8,6 +8,7 @@ using Problem2;
 using Problem3;
 using Problem4;
 using Problem5;
+using Problem6;
 namespace ConsoleApp
 {
     class Program
@@ -33,6 +34,9 @@ namespace ConsoleApp
                     break;
                 case 5:
                     TaxSolution taxAmount = new TaxSolution();
+                    break;
+                case 6:
+                    MathSolution math = new MathSolution();
                     break;
                 default:
                     break;
