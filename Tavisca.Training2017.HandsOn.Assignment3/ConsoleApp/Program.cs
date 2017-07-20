@@ -53,10 +53,7 @@ namespace ConsoleApp
                     break;
                 case 9:
                     OutParameterSolution outParam = new OutParameterSolution();
-                    break;
-                case 10:
-                    CommandLineArgSolution cmdArg = new CommandLineArgSolution();
-                    break;
+                    break;               
                 case 11:
                     CopyArraySolution copy = new CopyArraySolution();
                     break;
