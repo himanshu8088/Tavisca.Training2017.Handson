@@ -11,10 +11,10 @@ namespace Problem1
    Write a program to display user’s complete mailing address. Accept user’s name, city, street, pin and house no. and store it in a variable and display it.
    */
 
-    public class MailingAddress
+    public class MailingAddressSolution
     {
         private Address mailingAddress;
-        public MailingAddress()
+        public MailingAddressSolution()
         {
             mailingAddress = new Address();
             InputInformation();

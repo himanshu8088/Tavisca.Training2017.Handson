@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Problem3
 {
-    public class EvenOddNumber
+    public class EvenOddSolution
     {
         EvenOddCheck numCheck;
         private int num;
-        public EvenOddNumber()
+        public EvenOddSolution()
         {
             numCheck = new EvenOddCheck();
             GetNumberFromConsole();

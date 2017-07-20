@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Problem1;
 using Problem2;
 using Problem3;
+using Problem4;
 namespace ConsoleApp
 {
     class Program
@@ -18,13 +19,16 @@ namespace ConsoleApp
             switch (choice)
             {
                 case 1:
-                    MailingAddress mailingAddress = new MailingAddress();
+                    MailingAddressSolution mailingAddress = new MailingAddressSolution();
                     break;
                 case 2:
-                    StudentInformation student = new StudentInformation();
+                    StudentInformationSolution student = new StudentInformationSolution();
                     break;
                 case 3:
-                    EvenOddNumber numCheck = new EvenOddNumber();
+                    EvenOddSolution numCheck = new EvenOddSolution();
+                    break;
+                case 4:
+                    PowerOfNumberSolution power = new PowerOfNumberSolution();
                     break;
                 default:
                     break;

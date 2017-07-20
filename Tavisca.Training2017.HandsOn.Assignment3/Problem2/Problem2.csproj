@@ -41,7 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IRecord.cs" />
-    <Compile Include="StudentInformation.cs" />
+    <Compile Include="StudentInformationSolution.cs" />
     <Compile Include="StudentRecord.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

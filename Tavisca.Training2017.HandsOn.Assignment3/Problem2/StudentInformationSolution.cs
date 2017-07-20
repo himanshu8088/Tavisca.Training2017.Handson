@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 namespace Problem2
 {
     public enum InfoType { Name,Age,Class,University,RollNumber};
-    public class StudentInformation
+    public class StudentInformationSolution
     {
         StudentRecord info;
-        public StudentInformation()
+        public StudentInformationSolution()
         {
             info = new StudentRecord();
             SetStudentInformation();
