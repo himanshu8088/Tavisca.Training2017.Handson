@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Problem7
 {
-    public class Ladder
+    public class LadderSolution
     {
-        public Ladder(int n)
+        public LadderSolution(int n)
         {
             Print(n);
         }
