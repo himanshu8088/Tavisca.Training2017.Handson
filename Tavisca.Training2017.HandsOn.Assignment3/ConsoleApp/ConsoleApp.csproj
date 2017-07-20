@@ -49,6 +49,22 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Problem10\Problem10.csproj">
+      <Project>{4358b86e-e728-480f-8df1-7491bdf6da34}</Project>
+      <Name>Problem10</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problem11\Problem11.csproj">
+      <Project>{470e08fc-925f-46b6-96ff-d9041b3c7764}</Project>
+      <Name>Problem11</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problem12\Problem12.csproj">
+      <Project>{b208d113-9575-4093-ba7b-461b8e19478f}</Project>
+      <Name>Problem12</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Problem13\Problem13.csproj">
+      <Project>{82f57d93-8240-4a2c-a8e1-24418fb82592}</Project>
+      <Name>Problem13</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Problem1\Problem1.csproj">
       <Project>{2a8f8c77-d5d4-473b-8d7c-de07254a3638}</Project>
       <Name>Problem1</Name>

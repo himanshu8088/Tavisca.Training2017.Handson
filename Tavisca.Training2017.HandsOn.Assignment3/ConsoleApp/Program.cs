@@ -12,6 +12,10 @@ using Problem6;
 using Problem7;
 using Problem8;
 using Problem9;
+using Problem10;
+using Problem11;
+using Problem12;
+using Problem13;
 namespace ConsoleApp
 {
     class Program
@@ -49,6 +53,18 @@ namespace ConsoleApp
                     break;
                 case 9:
                     OutParameterSolution outParam = new OutParameterSolution();
+                    break;
+                case 10:
+                    CommandLineArgSolution cmdArg = new CommandLineArgSolution();
+                    break;
+                case 11:
+                    CopyArraySolution copy = new CopyArraySolution();
+                    break;
+                case 12:
+                    ReverseStringSolution reverseString = new ReverseStringSolution();
+                    break;
+                case 13:
+                    SwapSolution swap = new SwapSolution();
                     break;
                 default:
                     break;
