@@ -11,7 +11,6 @@ namespace StudentRecord
     {
         static string studentDirectoryPath = "D:\\Student Record";
         static string logFilePath = "\\log.LOG";
-
         static void Main(string[] args)
         {
             Initialize();
