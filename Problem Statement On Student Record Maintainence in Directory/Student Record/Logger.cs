@@ -12,11 +12,15 @@ namespace StudentRecord
         public static void Log(string msg)
         {           
             string log = Serializable<string>.SerializeData(LogFormattedString(msg));
-            File.AppendAllText(Path.LogFilePath, log);
+            using (StreamWriter logFile = new StreamWriter(Path.LogFilePath,append:true))
+            {
+                logFile.WriteLine(log);
+            }
         }
+
         public static string LogFormattedString(string logText)
         {
-            return string.Format("{0} {1}.{2}", DateTime.Now, logText, Environment.NewLine);
+            return string.Format("{0} {1}.", DateTime.Now, logText);
         }
     }
 }

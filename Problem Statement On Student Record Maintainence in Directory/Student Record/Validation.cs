@@ -13,11 +13,11 @@ namespace StudentRecord
             if (!Regex.IsMatch(strLetter, "^[A-Z][a-zA-Z]*$"))                            
                 return false;            
             return true;
-        }
+        }        
         public static bool isValidNumber(int number)
         {
-        //    if (!Regex.IsMatch(number.ToString(), "^[7-9][0-9]{9}$"))
-          //      return false;
+            if (!Regex.IsMatch(number.ToString(), "^[0-9{10}]$"))
+                return false;
             return true;
         }       
         public static bool isValidEmail(string email)

@@ -10,7 +10,6 @@ namespace StudentRecord
     {        
         public static string DirectoryPath { get; set; }
         public static List<string> StudentFilePathList { get; set; }
-        public static string LogFilePath { get; set; }
-        public static string CacheDataFilePath { get; set; }
+        public static string LogFilePath { get; set; }        
     }
 }

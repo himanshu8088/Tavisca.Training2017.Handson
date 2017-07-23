@@ -10,13 +10,19 @@ namespace StudentRecord
     public class StudentRecordConsole
     {
         static string studentDirectoryPath = "D:\\Student Record";
-        static string cacheFilePath = "\\CacheData.txt";
-        static string logFilePath = "\\log.txt";
+        static string logFilePath = "\\log.LOG";
 
         static void Main(string[] args)
         {
-            CreateFile();
-            Console.WriteLine("Key for Operation:\nAdd<1>\nList<2>\nUpdate<3>\nView<4>\n");
+            Initialize();
+            OptChoices();
+        }
+
+        #region Opt Choices from Console
+
+        public static void OptChoices()
+        {
+            Console.WriteLine("\nKey for Operation:\n\t\t<1>AddRecordInDirectory New Record\n\t\t<2>List Record\n\t\t<3>UpdateRecordInDirectory Particular Record\n\t\t<4>View Particular Record\n");
             int choice = -1;
 
             while (true)
@@ -27,35 +33,65 @@ namespace StudentRecord
                 switch (choice)
                 {
                     case 1:
-                        Record.Add(GetStudentInfo());
+                        Record.AddRecordInDirectory(GetStudentInfo());
                         break;
                     case 2:
-                        Record.ListAll();
+                        Record.ListAllRecordFromDirectory();
                         break;
                     case 3:
-                        Record.Update(FileName());
+                        Record.UpdateRecordInDirectory(FileName());
                         break;
                     case 4:
-                        Record.ViewRecord(FileName());
+                        Record.ViewSingleStudentRecordFromDirectory(FileName());
                         break;
                     default:
                         break;
                 }
-                Console.WriteLine("\nKey for Operation:\nAdd<1>\nList All<2>\nUpdate<3>\nView Record<4>\n");
+                Console.WriteLine("\nKey for Operation:\n\t\t<1>AddRecordInDirectory New Record\n\t\t<2>List Record\n\t\t<3>UpdateRecordInDirectory Particular Record\n\t\t<4>View Particular Record\n");
             }
         }
 
+        #endregion
+
+        #region Directory Creation and Initialization
+
+        public static void Initialize()
+        {
+            Path.StudentFilePathList = new List<string>();
+            Path.DirectoryPath = studentDirectoryPath;
+            Path.LogFilePath = string.Format("{0}{1}", studentDirectoryPath, logFilePath);
+
+            if (!Directory.Exists(Path.DirectoryPath))
+                Directory.CreateDirectory(studentDirectoryPath);
+            if (!File.Exists(Path.LogFilePath))
+                Logger.Log("Log file generated.");
+
+        }
+
+        #endregion
+
+        public static void Empty()
+        {
+            Console.WriteLine("No Record Found!");
+        }
+
+        #region Opt file name from user for updation or view
+
         public static int FileName()
         {
-            Console.WriteLine("\nEnter Mobile Number");
+            Console.WriteLine("\nEnter File Name Without Extension");
             int key;
             int.TryParse(Console.ReadLine(), out key);
             return key;
         }
 
+        #endregion
+
+        #region Input from Console and Validation
+
         public static Student GetStudentInfo()
         {
-            Student student = new Student();            
+            Student student = new Student();
             CultureInfo provider = CultureInfo.InvariantCulture;
 
             while (true)
@@ -67,8 +103,6 @@ namespace StudentRecord
                 else
                     Console.WriteLine("!Please Try Again Invalid Input.");
             }
-
-
             while (true)
             {
                 Console.WriteLine("Enter Last Name:");
@@ -102,7 +136,7 @@ namespace StudentRecord
             }
 
             Console.WriteLine("Enter Address:");
-            student.Address = Console.ReadLine();           
+            student.Address = Console.ReadLine();
 
             while (true)
             {
@@ -134,37 +168,38 @@ namespace StudentRecord
                 else
                     Console.WriteLine("!Please Try Again Invalid Input.");
             }
-
             while (true)
             {
                 Console.WriteLine("Enter a Date of Birth(e.g. dd/mm/yyyy):");
                 DateTime date;
-                bool val=DateTime.TryParseExact(Console.ReadLine(), "dd/MM/yyyy", null, System.Globalization.DateTimeStyles.None, out date);
+                bool val = DateTime.TryParseExact(Console.ReadLine(), "dd/MM/yyyy", null, System.Globalization.DateTimeStyles.None, out date);
                 student.DOB = date.Date;
                 if (val == true)
                     break;
                 else
                     Console.WriteLine("!Please Try Again Invalid Input.");
-
             }
 
             return student;
         }
 
-        public static void ListAllRecordOnConsole(int recNumber, Student student)
+        #endregion
+
+        #region Display on Console
+
+        public static void DisplayAllRecordListOnConsole(int recNumber, Student student, string fileName)
         {
             if (student != null)
             {
-                Console.WriteLine("#" + recNumber);
-                Console.WriteLine(string.Format("Name:{0} {1}", student.FirstName, student.LastName));
+                Console.WriteLine(string.Format("\n#{0}\nName:{1} {2}\nFile Name:{3}", recNumber, student.FirstName, student.LastName, fileName));
             }
             else
             {
-                Console.WriteLine("No Record Found");
+                Console.WriteLine("\n#{0}\n!Empty\nFile Name:{1}", recNumber, fileName);
             }
         }
 
-        public static void DisplayStudentRecord(Student student)
+        public static void DisplaySingleStudentRecordOnConsole(Student student)
         {
             if (student != null)
                 Console.WriteLine(string.Format("Name:{0} {1}\nMobile Number:{2}\nEmail ID:{3}\nAddress:{4}\nDate Of Birth:{5}\nCourse Pursuing:{6}\nMentor Name:{7}\nEmergency Number:{8}\n", student.FirstName, student.LastName, student.MobileNumber, student.Email, student.Address, student.DOB, student.Course, student.MentorName, student.EmergencyContactNumber));
@@ -172,40 +207,8 @@ namespace StudentRecord
                 Console.WriteLine("File doesnt exist.");
         }
 
-        public static void CreateFile()
-        {
-            Path.DirectoryPath = studentDirectoryPath;
-            Path.CacheDataFilePath = string.Format("{0}{1}", studentDirectoryPath, cacheFilePath);
-            Path.LogFilePath = string.Format("{0}{1}", studentDirectoryPath, logFilePath);
+        #endregion
 
-            if (!Directory.Exists(Path.DirectoryPath))
-            {
-                Directory.CreateDirectory(studentDirectoryPath);
-            }
-            if (!File.Exists(Path.LogFilePath))
-            {
-                File.WriteAllText(Path.LogFilePath, "");
-                Logger.Log("Log file generated.");
-            }
-            if (!File.Exists(Path.CacheDataFilePath))
-            {
-                Path.StudentFilePathList = new List<string>();
-                string cacheDataFile = Serializable<List<string>>.SerializeData(Path.StudentFilePathList);
-                File.WriteAllText(Path.CacheDataFilePath, cacheDataFile);
-            }
-            else
-            {
-                using (StreamReader file = File.OpenText(Path.CacheDataFilePath))
-                {
-                    string data = file.ReadToEnd();
-                    Path.StudentFilePathList = (List<string>)Serializable<List<string>>.DeserializeData(data);
-                }                
-            }
-        }
 
-        public static void Empty()
-        {
-            Console.WriteLine("No Record Found!");
-        }
     }
 }
