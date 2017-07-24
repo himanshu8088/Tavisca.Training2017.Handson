@@ -97,7 +97,7 @@ namespace StudentRecord
             {
                 Console.WriteLine("Enter First Name:");
                 student.FirstName = Console.ReadLine();
-                if (Validation.isValidLetter(student.FirstName))
+                if (Validation.IsValidLetter(student.FirstName))
                     break;
                 else
                     Console.WriteLine("!Please Try Again Invalid Input.");
@@ -106,7 +106,7 @@ namespace StudentRecord
             {
                 Console.WriteLine("Enter Last Name:");
                 student.LastName = Console.ReadLine();
-                if (Validation.isValidLetter(student.LastName))
+                if (Validation.IsValidLetter(student.LastName))
                     break;
                 else
                     Console.WriteLine("!Please Try Again Invalid Input.");
@@ -118,7 +118,7 @@ namespace StudentRecord
                 Console.WriteLine("Enter Mobile Number:");
                 int.TryParse(Console.ReadLine(), out number);
                 student.MobileNumber = number;
-                if (Validation.isValidNumber(student.MobileNumber))
+                if (Validation.IsValidNumber(student.MobileNumber))
                     break;
                 else
                     Console.WriteLine("!Please Try Again Invalid Input.");
@@ -128,7 +128,7 @@ namespace StudentRecord
             {
                 Console.WriteLine("Enter Email Id:");
                 student.Email = Console.ReadLine();
-                if (Validation.isValidEmail(student.Email))
+                if (Validation.IsValidEmail(student.Email))
                     break;
                 else
                     Console.WriteLine("!Please Try Again Invalid Input.");
@@ -141,7 +141,7 @@ namespace StudentRecord
             {
                 Console.WriteLine("Enter Course Pursuing Currently:");
                 student.Course = Console.ReadLine();
-                if (Validation.isValidLetter(student.Course))
+                if (Validation.IsValidLetter(student.Course))
                     break;
                 else
                     Console.WriteLine("!Please Try Again Invalid Input.");
@@ -151,7 +151,7 @@ namespace StudentRecord
             {
                 Console.WriteLine("Enter Mentor Name:");
                 student.MentorName = Console.ReadLine();
-                if (Validation.isValidLetter(student.MentorName))
+                if (Validation.IsValidLetter(student.MentorName))
                     break;
                 else
                     Console.WriteLine("!Please Try Again Invalid Input.");
@@ -162,7 +162,7 @@ namespace StudentRecord
                 Console.WriteLine("Enter Emergency Contact Number:");
                 int.TryParse(Console.ReadLine(), out number);
                 student.EmergencyContactNumber = number;
-                if (Validation.isValidNumber(student.EmergencyContactNumber))
+                if (Validation.IsValidNumber(student.EmergencyContactNumber))
                     break;
                 else
                     Console.WriteLine("!Please Try Again Invalid Input.");

@@ -6,21 +6,21 @@ using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 namespace StudentRecord
 {
-    class Validation
+   public class Validation
     {
-        public static bool isValidLetter(string strLetter)
+        public static bool IsValidLetter(string strLetter)
         {
             if (!Regex.IsMatch(strLetter, "^[A-Z][a-zA-Z]*$"))                            
                 return false;            
             return true;
         }        
-        public static bool isValidNumber(int number)
+        public static bool IsValidNumber(int number)
         {
             if (!Regex.IsMatch(number.ToString(), "^[0-9{10}]$"))
                 return false;
             return true;
         }       
-        public static bool isValidEmail(string email)
+        public static bool IsValidEmail(string email)
         {
             if (!Regex.IsMatch(email, @"^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-z]{2,3}$"))
                 return false;
