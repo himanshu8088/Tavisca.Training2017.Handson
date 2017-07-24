@@ -10,7 +10,7 @@ namespace StudentRecord
     {
         public string FirstName { set; get; }
         public string LastName { set; get; }
-        public int MobileNumber { set; get; }
+        public long MobileNumber { set; get; }
         public string Email { set; get; }
         public string Address { set; get; }
         public DateTime DOB { set; get; }

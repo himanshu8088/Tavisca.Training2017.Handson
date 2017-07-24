@@ -14,9 +14,9 @@ namespace StudentRecord
                 return false;            
             return true;
         }        
-        public static bool IsValidNumber(int number)
+        public static bool IsValidNumber(long number)
         {
-            if (!Regex.IsMatch(number.ToString(), "^[0-9{10}]$"))
+            if (!Regex.IsMatch(number.ToString(), "^[0-9]{10}$"))
                 return false;
             return true;
         }       

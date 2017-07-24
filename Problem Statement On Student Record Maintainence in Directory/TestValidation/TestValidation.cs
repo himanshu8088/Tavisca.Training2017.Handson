@@ -42,24 +42,25 @@ namespace TestStudentRecord
         [TestMethod]
         public void IsValidNumber_MobileNumberValid_True()
         {
-            string num = "9988776655";
-            bool response = Validation.IsValidNumber(int.Parse(num));
+            
+            bool response = Validation.IsValidNumber(9911115544);
             Assert.IsTrue(response);
+        }
+       
+
+        [TestMethod]
+        public void IsValidNumber_MobileNumberLesserLength_NotAccepted()
+        {
+           
+            bool response = Validation.IsValidNumber(98845);
+            Assert.IsFalse(response);
         }
 
         [TestMethod]
         public void IsValidNumber_MobileNumberLargerLength_NotAccepted()
         {
-            string num = "99888888888655";
-            bool response = Validation.IsValidNumber(int.Parse(num));
-            Assert.IsFalse(response);
-        }
 
-        [TestMethod]
-        public void IsValidNumber_MobileNumberLesserLength_NotAccepted()
-        {
-            string num = "998855";
-            bool response = Validation.IsValidNumber(int.Parse(num));
+            bool response = Validation.IsValidNumber(9884542512121);
             Assert.IsFalse(response);
         }
         #endregion
@@ -82,6 +83,12 @@ namespace TestStudentRecord
         {
             bool response = Validation.IsValidEmail("#@tva");
             Assert.IsFalse(response);
+        }
+        [TestMethod]
+        public void IsValidEmail_ValidEmail_Accepted()
+        {
+            bool response = Validation.IsValidEmail("hello@tva.com");
+            Assert.IsTrue(response);
         }
         #endregion
 

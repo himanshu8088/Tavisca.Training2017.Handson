@@ -21,7 +21,7 @@ namespace StudentRecord
 
         public static void OptChoices()
         {
-            Console.WriteLine("\nKey for Operation:\n\t\t<1>AddRecordInDirectory New Record\n\t\t<2>List Record\n\t\t<3>UpdateRecordInDirectory Particular Record\n\t\t<4>View Particular Record\n");
+            Console.WriteLine("\nKey for Operation:\n\t\t<1>Add New Record In Directory\n\t\t<2>List Record\n\t\t<3>Update Particular Record In Directory \n\t\t<4>View Particular Record\n");
             int choice = -1;
 
             while (true)
@@ -46,7 +46,7 @@ namespace StudentRecord
                     default:
                         break;
                 }
-                Console.WriteLine("\nKey for Operation:\n\t\t<1>AddRecordInDirectory New Record\n\t\t<2>List Record\n\t\t<3>UpdateRecordInDirectory Particular Record\n\t\t<4>View Particular Record\n");
+                Console.WriteLine("\nKey for Operation:\n\t\t<1>Add New Record In Directory \n\t\t<2>List Record\n\t\t<3>Update Particular Record In Directory\n\t\t<4>View Particular Record\n");
             }
         }
 
@@ -76,11 +76,11 @@ namespace StudentRecord
 
         #region Opt file name from user for updation or view
 
-        public static int FileName()
+        public static long FileName()
         {
             Console.WriteLine("\nEnter File Name Without Extension");
-            int key;
-            int.TryParse(Console.ReadLine(), out key);
+            long key;
+            long.TryParse(Console.ReadLine(), out key);
             return key;
         }
 
@@ -114,9 +114,9 @@ namespace StudentRecord
 
             while (true)
             {
-                int number;
+                long number;
                 Console.WriteLine("Enter Mobile Number:");
-                int.TryParse(Console.ReadLine(), out number);
+                long.TryParse(Console.ReadLine(), out number);
                 student.MobileNumber = number;
                 if (Validation.IsValidNumber(student.MobileNumber))
                     break;

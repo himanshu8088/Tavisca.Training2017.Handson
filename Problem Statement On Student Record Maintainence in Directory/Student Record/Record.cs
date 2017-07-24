@@ -32,7 +32,7 @@ namespace StudentRecord
                 Logger.Log("Serializable object info added for file "+file.Name);                
             }                
         }
-        public static void UpdateRecordInDirectory(int id)
+        public static void UpdateRecordInDirectory(long id)
         {
             string searchFile = string.Format("{0}\\{1}.bin", Path.DirectoryPath, id);
             UpdateList();
@@ -72,7 +72,7 @@ namespace StudentRecord
                 }
             }
         }
-        public static void ViewSingleStudentRecordFromDirectory(int id)
+        public static void ViewSingleStudentRecordFromDirectory(long id)
         {
             UpdateList();
             string searchFile = string.Format("{0}\\{1}.bin",Path.DirectoryPath,id);
