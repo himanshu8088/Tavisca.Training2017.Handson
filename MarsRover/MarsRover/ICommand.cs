@@ -8,9 +8,9 @@ namespace MarsRover
 {
     public interface ICommand
     {
-        double Up { get; }
-        double Down { get; }
-        double Left { get; }
-        double Right { get; }
+        double Up { get; set; }
+        double Down { get; set; }
+        double Left { get; set; }
+        double Right { get; set; }
     }
 }
